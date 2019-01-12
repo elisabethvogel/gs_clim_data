@@ -1,0 +1,106 @@
+/* modified Joomla Menu */
+#ja-container2 ul.menu {
+	margin: 0;
+	padding: 1px 0 0;
+	list-style: none;
+	background: url(../images/hdot2.gif) repeat-x top;
+}
+
+#ja-container2 ul.menu li {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+}
+
+#ja-container2 ul.menu li a {
+	padding: 2px 0;
+	display: block;
+	color: #999999;
+	background: url(../images/hdot2.gif) repeat-x bottom;
+	text-decoration: none;
+	outline: none;
+}
+
+#ja-container2 ul.menu li a span {
+	padding-left: 16px;
+	background: url(../images/bullet.gif) no-repeat 5px 5px;
+}
+
+#ja-container2 ul.menu li a:hover,
+#ja-container2 ul.menu li a:active,
+#ja-container2 ul.menu li a:focus
+	{
+	color: #333333;
+	background: url(../images/hdot2.gif) repeat-x bottom #66ccff;
+	text-decoration: none;
+}
+
+#ja-container2 ul.menu li.active a {
+	background: url(../images/hdot2.gif) repeat-x bottom #FFFFFF;
+	color: #7BA566;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#ja-container2 ul.menu li.active a span {
+	background: url(../images/bullet3.gif) no-repeat 5px 5px;
+}
+
+#ja-container2 ul.menu li ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* li li */
+
+#ja-container2 ul.menu li li {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	font-weight: normal !important;
+}
+
+#ja-container2 ul.menu li li a {
+	padding: 2px 15px;
+	display: block;
+	color: #999999  !important;
+	background: url(../images/hdot2.gif) repeat-x bottom;
+	text-decoration: none;
+	outline: none;
+	font-weight: normal !important;
+}
+
+#ja-container2 ul.menu li li a span {
+	padding-left: 30px;
+	background: url(../images/bullet.gif) no-repeat 5px 5px;
+	font-weight: normal !important;
+}
+
+#ja-container2 ul.menu li li a:hover,
+#ja-container2 ul.menu li li a:active,
+#ja-container2 ul.menu li li a:focus
+	{
+	color: #333333 !important;
+	background: url(../images/hdot2.gif) repeat-x bottom #66ccff;
+	text-decoration: none;
+}
+
+#ja-container2 ul.menu li li.active a {
+	background: url(../images/hdot2.gif) repeat-x bottom #FFFFFF;
+	color: #7BA566 !important;
+	font-weight: bold !important;
+	text-decoration: none !important;
+}
+
+#ja-container2 ul.menu li li.active a span {
+	background: url(../images/bullet3.gif) no-repeat 5px 5px  !important;
+	font-weight: bold !important;
+	color: #7BA566 !important;
+}
+
+#ja-container2 ul.menu li li ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

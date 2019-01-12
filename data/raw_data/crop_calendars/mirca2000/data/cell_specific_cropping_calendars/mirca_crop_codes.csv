@@ -1,0 +1,53 @@
+﻿code,crop,irrigation
+1,Wheat,irrigated
+2,Maize,irrigated
+3,Rice,irrigated
+4,Barley,irrigated
+5,Rye,irrigated
+6,Millet,irrigated
+7,Sorghum,irrigated
+8,Soybeans,irrigated
+9,Sunflower,irrigated
+10,Potatoes,irrigated
+11,Cassava,irrigated
+12,Sugar cane,irrigated
+13,Sugar beet,irrigated
+14,Oil palm,irrigated
+15,Rapeseed / Canola,irrigated
+16,Groundnuts / Peanuts,irrigated
+17,Pulses,irrigated
+18,Citrus,irrigated
+19,Date palm,irrigated
+20,Grapes / Vine,irrigated
+21,Cotton,irrigated
+22,Cocoa,irrigated
+23,Coffee,irrigated
+24,Others perennial,irrigated
+25,Fodder grasses,irrigated
+26,Others annual,irrigated
+27,Wheat,rainfed
+28,Maize,rainfed
+29,Rice,rainfed
+30,Barley,rainfed
+31,Rye,rainfed
+32,Millet,rainfed
+33,Sorghum,rainfed
+34,Soybeans,rainfed
+35,Sunflower,rainfed
+36,Potatoes,rainfed
+37,Cassava,rainfed
+38,Sugar cane,rainfed
+39,Sugar beet,rainfed
+40,Oil palm,rainfed
+41,Rapeseed / Canola,rainfed
+42,Groundnuts / Peanuts,rainfed
+43,Pulses,rainfed
+44,Citrus,rainfed
+45,Date palm,rainfed
+46,Grapes / Vine,rainfed
+47,Cotton,rainfed
+48,Cocoa,rainfed
+49,Coffee,rainfed
+50,Others perennial,rainfed
+51,Fodder grasses,rainfed
+52,Others annual,rainfed

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html><head>
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Dataset Record</title>
+<link rel="shortcut icon" href="http://catalogue.ceda.ac.uk/static/img/favicon.ico">
+
+
+
+
+
+    
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="Dataset%20Record_files/mf54_reset.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="Dataset%20Record_files/mf54_grid_nosidebar.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="Dataset%20Record_files/mf54_content_nosidebar.css">
+    <link rel="stylesheet" type="text/css" href="Dataset%20Record_files/cmd.css">
+    <link rel="stylesheet" type="text/css" href="Dataset%20Record_files/jquery-ui.css">
+    
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="Dataset%20Record_files/cookielaw.css">
+
+
+
+
+    
+    <script type="text/javascript" src="Dataset%20Record_files/jquery-1.js"></script>
+    <script type="text/javascript" src="Dataset%20Record_files/cookielaw.js"></script>
+    <script type="text/javascript" src="Dataset%20Record_files/cedamoles.js"></script>
+    <script type="text/javascript" src="Dataset%20Record_files/jquery-ui.js"></script>
+    
+
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script></head>
+
+<body data-pinterest-extension-installed="ff1.37.9">
+  <!-- CONTAINER FOR ENTIRE PAGE -->
+  <div class="container" id="">
+
+    <!-- A. HEADER -->         
+    <div class="corner-page-top"></div>        
+    <div class="header">
+      <div class="header-top">
+        
+        <!-- A.1 SITENAME -->   
+        
+    <a class="sitelogo" href="http://www.ceda.ac.uk/" title="Home"></a>
+           
+        <div class="sitename">
+        </div>
+    
+        <!-- A.2 BUTTON NAVIGATION -->
+        <div class="navbutton">
+          <ul>
+            <li><a href="http://www.ceda.ac.uk/blog/feeds/rss/" title="RSS"><img src="Dataset%20Record_files/rss.png" alt="RSS-Button"></a></li>
+            <li><a href="http://www.ceda.ac.uk/blog/feeds/atom/" title="Atom"><img src="Dataset%20Record_files/atom.png" alt="Atom-Button"></a></li>
+            <li><a href="http://twitter.com/cedanews" title="Twitter"><img class="yoywdzyygtzjujntgiqt" src="Dataset%20Record_files/twitter.png" alt="Twitter-Button"></a></li>
+          </ul>
+        </div>
+
+        <!-- A.X USERSTATUS -->
+        <div class="userstatus">
+           
+           		
+           		
+	           		<ul>		
+						<li>
+							Welcome, evogel
+						</li>
+						
+						<li>
+							<a href="https://services.ceda.ac.uk/cedasite/myceda/user" title="">
+								Account
+							</a>
+						</li> 
+						 
+						<!-- logout link -->
+						<li>
+							<a href="https://services.ceda.ac.uk/cedasite/cedasite/myceda/user?logout=True">
+								Logout
+							</a>
+						</li>
+					</ul>
+				
+           
+        </div>
+        
+        <!-- A.3 GLOBAL NAVIGATION -->
+        <div class="navglobal">
+            
+            	<ul>
+        			<li><a href="http://www.ceda.ac.uk/contact">Contact us</a></li>
+        			<li><a href="http://www.ceda.ac.uk/help">CEDA Help</a></li>
+        			<li><a href="http://www.ceda.ac.uk/blog">News</a></li>
+    			</ul>
+            
+        </div>        
+      </div>
+    
+      <!-- A.4 BREADCRUMB and SEARCHFORM -->
+      <div class="header-bottom">
+
+        <!-- Breadcrumb -->
+        <div id="breadcrumb-menu">
+            
+
+    <ul>
+        <li><a href="http://www.ceda.ac.uk/">CEDA</a></li>
+        <li>Catalogue</li>
+    </ul>
+
+
+        </div>   
+
+        <!-- Search form -->                  
+        <div class="searchform">
+          
+
+    <div id="search_bar">
+        <form id="search_form" action="/search/">
+
+            <select style="padding: 2px 0 2px 3px;" name="return_obj" id="return_obj">
+                <option selected="selected" value="ob">Find data related to</option>
+                <option value="by_search_obj">Find information about</option>
+            </select>
+
+            <input style="padding: 2px 0 2px 3px;" name="search_term" onfocus="if (this.value == 'Input search term...') { this.value = ''; }" value="Input search term..." type="text">
+            in
+
+            <select style="padding: 2px 0 2px 3px;" name="search_obj" id="search_obj">
+                <option selected="selected" value="ob">Datasets</option>
+                <option value="coll">Dataset Collections</option>
+                <option value="proj">Projects</option>
+                <option value="instr">Instruments</option>
+                <option value="plat">Platforms</option>                                
+                <option value="comp">Computation (Model)</option>
+            </select>
+
+            <input value="GO!" type="submit">
+
+        </form>					
+    </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    <div class="corner-page-bottom"></div>    
+    
+    <!-- B. NAVIGATION BAR -->
+    <div class="corner-page-top"></div>        
+    <div class="navbar">
+        
+
+    <ul class="nav pull-right">
+        <li><a href="http://catalogue.ceda.ac.uk/">Catalogue Home</a></li>
+        <li><a href="http://catalogue.ceda.ac.uk/intro">Catalogue Intro</a></li>
+        <li><a href="http://catalogue.ceda.ac.uk/search/advanced/">Advanced Search</a></li>
+    </ul>
+
+        
+    <div class="navbar-right">
+        <ul class="nav pull-right">
+            <li class="dropdown" id="dropdown-menu-help"><a href="http://catalogue.ceda.ac.uk/admin/">Admin login</a></li>
+            <li class="divider-vertical">
+        </li></ul>
+    </div>
+
+    </div>
+    
+    <!-- C. MAIN SECTION -->      
+    <div class="main">
+      <!-- <h1 class="pagetitle">block title could go here but causes problems lower down</h1> -->
+
+     
+      <!-- C.1 CONTENT -->
+      <div class="content">
+        <!-- CONTENT CELL -->
+
+        <a id="anchor-heading-1"></a>
+        <div class="corner-content-1col-top"></div>
+        <div class="content-1col-nobox">
+
+            
+
+            
+
+              
+       
+    <div id="top_bar">
+
+        
+        <div id="top_bar_logo_panel">
+            <img src="Dataset%20Record_files/crulogo.gif" alt="CRU Logo" class="logo_image">
+        </div>
+        
+        
+        <div id="top_bar_left_panel" style="width: 440px;">
+            <div style="font-size: 20px !important; font-weight: bold; margin-bottom: 12px;">
+                <div style="float: left;">CRU TS3.23: Climatic Research 
+Unit (CRU) Time-Series (TS) Version 3.23 of High Resolution Gridded Data
+ of Month-by-month Variation in Climate (Jan. 1901- Dec. 2014)</div>
+            </div>
+
+            
+
+                 <div id="request_access_button" title="Request Access" style="float: left;">
+                    
+                        <a href="https://services.ceda.ac.uk/cedasite/register/info">
+                            <img class="small_action_button" src="Dataset%20Record_files/request_access.png" alt="Request access">
+                        </a>
+                    
+                </div>
+
+                
+
+                
+                        <div id="browse_link" title="http://browse.ceda.ac.uk/browse/badc/cru/data/cru_ts/cru_ts_3.23" style="float: left;">
+                             <a href="http://browse.ceda.ac.uk/browse/badc/cru/data/cru_ts/cru_ts_3.23">
+                                <img class="small_action_button" src="Dataset%20Record_files/get_data.png" alt="Get data">
+                             </a>
+                        </div>
+                
+
+                <div id="data_tools" title="Data Tools" style="float: left;">
+                    <a href="#tab_data_tools">
+                        <img class="small_action_button" src="Dataset%20Record_files/data_tools.png" alt="Data tools" onclick='$("#tabs").tabs({active: 3});'>
+                    </a>
+                </div>
+
+            
+
+        </div>
+
+        <div id="top_bar_right_panel">
+
+            <div class="fill" id="main">
+                
+                    <img src="Dataset%20Record_files/observation.png" alt="Observation graphic" class="title_image">
+                
+                <div class="title_text">Dataset</div>
+            </div>
+
+            
+                <div><b>Update Frequency:</b> <span class="float_right">Not Planned</span></div>
+            
+
+<!--             -->
+
+            
+                <div><b>Status:</b> <span class="float_right">Completed</span></div>
+            
+
+            <div><b>Publication State:</b> <span class="float_right">Published</span></div>
+            <div><b>Publication Date:</b> <span class="float_right">2015-10-15</span></div>
+            <div><b>DOI Publication Date:</b> <span class="float_right">No DOI</span></div>
+
+            <div>
+            
+                &nbsp;
+            
+            </div>
+        </div>
+
+
+    </div>
+
+
+            
+    
+        <div style="background: yellow; margin: 0px 10px 10px 10px; text-align: center; font-size: 14px; padding: 7px;">
+            <b>Latest Info:</b>
+            2015-10-13: The WET variable has been temporarily withdrawn 
+while the synthesising process is examined. It will be available later 
+in 2015.
+        </div>
+   
+   
+
+
+            
+
+                <div id="mid_bar_left_panel" style="border-color: #4f81bd;">
+
+                    
+
+            <div class="right_title">Abstract</div>
+            <div class="overflow_250"><p>The gridded CRU TS 
+(time-series) 3.23 data are month-by-month variations in climate over 
+the period 1901-2014, on high-resolution (0.5x0.5 degree) grids, 
+produced by the Climatic Research Unit (CRU) at the University of East 
+Anglia.</p>
+
+<p>CRU TS 3.23 variables are cloud cover, diurnal temperature range, 
+frost day frequency, PET, precipitation, daily mean temperature, monthly
+ average daily maximum and minimum temperature, and vapour pressure for 
+the period Jan. 1901 - Dec. 2014.</p>
+
+<p>CRU TS 3.23 data were produced using the same methodology as for the 
+3.21 datasets. In addition to updating the dataset with 2014 data, some 
+new stations have been added for TMP and PRE only. Known issues 
+predating this release remain; the 4.00 release, due soon, will address 
+these.</p>
+
+<p>The 4.00 release will utilise Angular-Distance Weighting (ADW) 
+gridding, promising more accurate results with far greater adjustability
+ and logging. It will cover the same spatial, temporal and variate 
+spaces as version 3.23 (land areas excluding Antarctica at 0.5°x0.5°, 
+monthly from 1901 to 2014 with no missing values, 10 variables).</p>
+
+<p>Versions 3.23 and 4.00 will run concurrently until 2016, after which 
+the new (ADW) approach will be used. This is to allow comparisons 
+between the methods and results to be made by users of the dataset.</p>
+
+<p>The CRU TS 3.23 data are monthly gridded fields based on monthly 
+observational data, which are calculated from daily or sub-daily data by
+ National Meteorological Services and other external agents. The ASCII 
+and netcdf data files both contain monthly mean values for the various 
+parameters.</p>
+
+<p>All CRU TS output files are actual values - NOT anomalies.</p>
+
+<p>CRU TS data are available for download to all CEDA users. The CEDA 
+Web Processing Service (WPS) may be used to extract a subset of the data
+ (please see link to WPS below).<br></p></div>
+
+            
+            
+            <div style="padding: 15px;"><b>Citable as:</b>&nbsp;&nbsp;University
+ of East Anglia Climatic Research Unit; Harris, I.(.; Jones, P.D. 
+(2015): CRU TS3.23: Climatic Research Unit (CRU) Time-Series (TS) 
+Version 3.23 of High Resolution Gridded Data of Month-by-month Variation
+ in Climate (Jan. 1901- Dec. 2014). Centre for Environmental Data 
+Analysis, <i>date of citation</i>. <a style="color: blue;" href="http://catalogue.ceda.ac.uk/uuid/5dca9487dc614711a3a933e44a933ad3">http://catalogue.ceda.ac.uk/uuid/5dca9487dc614711a3a933e44a933ad3</a></div>
+            <div class="keywords_div"><b>Keywords:</b>&nbsp;&nbsp;CRU TS, ATMOSPHERE, EARTHSCIENCE</div>
+
+            <div>
+                <script>
+                     $(function() {
+                        $( "#tabs" ).tabs();
+                     });
+                </script>
+
+                
+                <div class="ui-tabs ui-widget ui-widget-content ui-corner-all" id="tabs">
+                    <ul role="tablist" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+                        <li aria-selected="true" aria-labelledby="ui-id-1" aria-controls="tab_details" tabindex="0" role="tab" class="ui-state-default ui-corner-top ui-tabs-active ui-state-active"><a id="ui-id-1" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tab_details">Details</a></li>
+                        <li aria-selected="false" aria-labelledby="ui-id-2" aria-controls="tab_process" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-2" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tab_process">Process</a></li>
+                        <li aria-selected="false" aria-labelledby="ui-id-3" aria-controls="tab_variables" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-3" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tab_variables">Variables</a></li>
+                        <li aria-selected="false" aria-labelledby="ui-id-4" aria-controls="tab_data_tools" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-4" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tab_data_tools">Tools (4)</a></li>
+                        <li aria-selected="false" aria-labelledby="ui-id-5" aria-controls="tab_linked_docs" tabindex="-1" role="tab" class="ui-state-default ui-corner-top"><a id="ui-id-5" tabindex="-1" role="presentation" class="ui-tabs-anchor" href="#tab_linked_docs">Docs (4)</a></li>
+                    </ul>
+
+                    <div aria-hidden="false" aria-expanded="true" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-1" id="tab_details" style="padding: 0px;">
+                        <div style="height: 10px;"> </div>
+
+                            
+                            <div class="prow1">
+                                <div class="prop_name">Project:</div>
+                                <div class="prop_value"><a href="http://catalogue.ceda.ac.uk/uuid/b6c783922d1ce68c4293d90caede5bb9">UEA Climatic Research Unit  (CRU) Gridded Datasets production project&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a></div>
+                            </div>
+                            
+
+                            
+                            <div class="prow1">
+                                <div class="prop_name">Dataset is part of:</div>
+                                <div class="prop_value">
+                                    
+                                        <div class="prop_url">
+                                            Dataset Collection: <a href="http://catalogue.ceda.ac.uk/uuid/3f8944800cc48e1cbc29a5ee12d8542d" title="Climatic Research Unit (CRU) time-series datasets of variations in climate with variations in other phenomena">Climatic Research Unit (CRU) time-series datasets of vari...&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                            
+
+                            <div class="prow2">
+                                <div class="prop_name"><a name="info_updates"></a>Previous Info:</div>
+                                <div class="prop_value">The WET variable
+ has been temporarily withdrawn while the synthesising process is 
+examined. It will be available later in 2015. (2015-10-13 20:30:06)</div>
+                            </div>
+
+                            <div class="prow1">
+                                <div class="prop_name">Previously used record identifiers:</div>
+                                <div class="prop_value">
+                                    
+                                        <div>
+                                            No related previous identifiers.
+                                        </div>
+                                    
+                                </div>
+                            </div>
+
+                            
+
+                            
+                            <div class="prow1">
+                                <div class="prop_name">Access rules:</div>
+                                <div class="prop_value">Access to these data is available to any registered CEDA user. Please Login or Register for an account to gain access. <br>Use of these data is covered by the following licence: <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</a>.</div>
+                            </div>
+                            
+
+                            <div class="prow2">
+                                <div class="prop_name">Abbreviation:</div>
+                                <div class="prop_value">cru_ts_3.23</div>
+                            </div>
+
+                            
+                            <div class="prow1">
+                                <div class="prop_name">Data lineage:</div>
+                                <div class="prop_value"><p>CRU TS 3.00 
+data files acquired directly from CRU in 2007. CRU provided the BADC 
+with software to generate the CRU datasets in 2010, and this was used to
+ produce CRU TS 3.10 at the BADC in early 2011.</p>
+
+<p>In July 2012, systematic errors were discovered in the CRUTS v3.10 
+process. The effect was, in some cases, to reduce the gridded values for
+ PRE and therefore WET. Values of FRS were found to be unrealistic in 
+some areas due to the algorithms used for synthetic generation. The 
+files (pre, frs and wet) were immediately removed from BADC. The 
+corrected run for precipitation, based on the v3.10 precipitation 
+station data, was generated as a direct replacement and given the 
+version number 3.10.01. There were no corrected runs produced for wet 
+and frs.</p>
+
+<p>CRU TS 3.20 was produced in December 2012.<br>In March 2013, CRU TS 
+observation databases for TMP and PRE variables were provided by CRU. 
+Others are in preparation. In july 2013, two errors were found in the 
+PRE and WET variables of CRU TS v3.20. These have been repaired in CRU 
+TS v3.21. Details of the errors found are available in the Release Notes
+ in the archive.</p>
+
+<p>CRU TS 3.21 was produced in July 2013. </p>
+
+<p>CRU TS 3.22 was produced in July 2014.</p>
+
+<p>In October 2015, CRU TS 3.23 provided by CRU, is the latest version 
+available, superseding all previous data versions (which are available 
+to allow user comparisons).</p></div>
+                            </div>
+                            
+
+                            
+                            <div class="prow2">
+                                <div class="prop_name">Data Quality:</div>
+                                <div class="prop_value">Please see 
+Mitchell and Jones, 2005 (http://dx.doi.org/10.1002/joc.1181).
+The CRU TS3.00 files were produced by CRU and include data up to the end
+ of 2006. However, only data up to June 2006 should be used. For dates 
+later than this, any subsequent updates/corrections to the original data
+ have not been included, so the values may be misleading.
+
+Please note, CRU TS 3.00 NetCDF data are experimental, not all 
+attributes are correctly set yet. The data themselves should be 
+identical to those in the ASCII versions.
+
+For CRU TS 3.10, the data have been examined in detail for consistency 
+with CRU TS 3.00 by the CRU. Small differences may occur where 
+additional station data have become available since CRU TS 3.00 was 
+generated and are now included in the analysis. The data from the entire
+ period 1901-2009 can be used, and all of the attributes in the NetCDF 
+files are correctly set.
+
+For each new release of the CRU TS data, the underlying datasets have 
+been improved. New stations have been added. Some stations have been 
+removed for quality control purposes. This explains why data may not be 
+exactly the same for a common time period.</div>
+                            </div>
+                            
+
+                            
+                            <div class="prow1">
+                                <div class="prop_name">File Format:</div>
+                                <div class="prop_value">The CRU TS 3.23 
+data (i.e. climate variables) are available in both compressed (.gz 
+extension) ASCII ".dat" and netcdf ".nc" file formats. CRU TS 3.23 
+metadata files (i.e. stations and observations) are available in ASCII. 
+To understand how to read the CRU TS 3.23 data and metadata files, 
+please refer to the CRU_TS_3.23_File_Formats_explained PDF documentation
+ (under Linked Documentation below). </div>
+                            </div>
+                            
+
+                            
+                    </div>
+
+                    <div aria-hidden="true" aria-expanded="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-2" id="tab_process" style="padding: 0px; display: none;">
+                        <div style="height: 10px;"> </div>
+                        <div class="right_title">Process overview</div>
+                        <div>This dataset was generated by the <a href="http://catalogue.ceda.ac.uk/uuid/f300abf12b80415594ab776280307a31">computation</a> detailed below.</div>
+                        <br>
+                        
+                        <div class="prow2">
+
+                            
+                                <div class="prop_name">Title</div>
+                                <div class="prop_value">UEA Climate Research Unit (CRU)  High Resolution gridding software deployed on UEA Climate Research Unit (CRU) computer system</div>
+                            
+                        </div>
+                        
+                        <div class="prow2">
+
+                            
+                                <div class="prop_name">Abstract</div>
+                                <div class="prop_value">This computation
+ involved: UEA Climate Research Unit (CRU)  High Resolution gridding 
+software deployed on UEA Climate Research Unit (CRU) computer system. 
+For details about the production of CRU TS and CRU CY datasets, please 
+refer to Harris et al. (2014) - see link below.</div>
+                            
+                        </div>
+                        
+                        <div class="prow2">
+
+                            
+                                <div class="prop_name">Input Description</div>
+                                <div class="prop_value">None</div>
+                            
+                        </div>
+                        
+                        <div class="prow2">
+
+                            
+                                <div class="prop_name">Output Description</div>
+                                <div class="prop_value">None</div>
+                            
+                        </div>
+                        
+                        <div class="prow2">
+
+                            
+                                <div class="prop_name">Software Reference</div>
+                                <div class="prop_value">None</div>
+                            
+                        </div>
+                        
+
+                    </div>
+
+                    <div aria-hidden="true" aria-expanded="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-3" id="tab_variables" style="padding: 0px; display: none;">
+                        <div style="height: 10px;"> </div>
+
+                        AIRTEMPERATURE<br>ATMOSPHERICPHENOMENA<br>ATMOSPHERICTEMPERATURE<br>ATMOSPHERICWATERVAPOR<br>CLOUDAMOUNT<br>CLOUDCOVER<br>CLOUDS<br>FREQUENCY<br>FROST<br>MAXIMUM<br>MINIMUMTEMPERATURE<br>PRECIPITATION<br>PRECIPITATIONAMOUNT<br>VAPOURPRESSURE<br>WATERVAPOR
+                    </div>
+
+                    <div aria-hidden="true" aria-expanded="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-4" id="tab_data_tools" style="padding: 0px; display: none;">
+                        <div style="height: 10px;"> </div>
+
+                        
+                            
+                                 <div class="row1 hover_link">
+                                     <a href="http://browse.ceda.ac.uk/browse/badc/cru/data/cru_ts/cru_ts_3.23" title="Web download">Web download&nbsp;&nbsp;<img style="margin: 0px;" src="Dataset%20Record_files/link_arrow.png"></a>
+                                     <a href="http://www.ceda.ac.uk/help/users-guide/download-data/#http"><img style="margin: 0px;" src="Dataset%20Record_files/info_icon.png" alt="Help information"></a>
+                                 </div>
+                            
+                                 <div class="row2 hover_link">
+                                     <a href="ftp://ftp.ceda.ac.uk/badc/cru/data/cru_ts/cru_ts_3.23" title="FTP download">FTP download&nbsp;&nbsp;<img style="margin: 0px;" src="Dataset%20Record_files/link_arrow.png"></a>
+                                     <a href="http://www.ceda.ac.uk/help/users-guide/download-data/#ftp"><img style="margin: 0px;" src="Dataset%20Record_files/info_icon.png" alt="Help information"></a>
+                                 </div>
+                            
+                                 <div class="row1 hover_link">
+                                     <a href="http://dap.ceda.ac.uk/data/badc/cru/data/cru_ts/cru_ts_3.23" title="OpenDAP access">OpenDAP access&nbsp;&nbsp;<img style="margin: 0px;" src="Dataset%20Record_files/link_arrow.png"></a>
+                                     <a href="http://www.ceda.ac.uk/help/users-guide/download-data/#opendap"><img style="margin: 0px;" src="Dataset%20Record_files/info_icon.png" alt="Help information"></a>
+                                 </div>
+                            
+                                 <div class="row2 hover_link">
+                                     <a href="http://ceda-wps2.badc.rl.ac.uk/ui/home" title="CEDA Web Processing Service (WPS) to extract a subset of CRU TS data">CEDA Web Processing Service (WPS) to extract a subset of CRU TS data&nbsp;&nbsp;<img style="margin: 0px;" src="Dataset%20Record_files/link_arrow.png"></a>
+                                     <a href="http://catalogue.ceda.ac.uk/uuid/None"><img style="margin: 0px;" src="Dataset%20Record_files/info_icon.png" alt="Help information"></a>
+                                 </div>
+                            
+                        
+
+                    </div>
+
+                    
+                    <div aria-hidden="true" aria-expanded="false" role="tabpanel" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-5" id="tab_linked_docs" style="padding: 0px; display: none;">
+                        <div style="height: 10px;"> </div>
+
+                        
+                            
+                                 <div class="row1 hover_link">
+                                     <a href="http://www.cru.uea.ac.uk/data/" title="Climate Research Unit (CRU) data Homepage">Climate Research Unit (CRU) data Homepage&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+                                 </div>
+                            
+                                 <div class="row2 hover_link">
+                                     <a href="http://browse.ceda.ac.uk/browse/badc/cru/doc/File_Format_CRUTS3.23.pdf" title="CRU TS 3.23 File Formats explained ">CRU TS 3.23 File Formats explained &nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+                                 </div>
+                            
+                                 <div class="row1 hover_link">
+                                     <a href="http://dx.doi.org/10.1002/joc.3711" title="Harris et al. (2014) Reference">Harris et al. (2014) Reference&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+                                 </div>
+                            
+                                 <div class="row2 hover_link">
+                                     <a href="http://badc.nerc.ac.uk/data/cru/WPS_CRU.html" title="CEDA WPS User Guide for extracting CRU TS data">CEDA WPS User Guide for extracting CRU TS data&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+                                 </div>
+                            
+                        
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+
+
+                </div>
+
+                <div id="mid_bar_right_panel" style="border-color: #4f81bd;">
+
+                    
+    <div class="right_title">Temporal Range</div>
+
+    
+        <div style="clear: both; float: center; margin-top: 5px; ">
+            <div id="start_time" style="min-width: 110px; text-align: center;">1901-01-01T00:00:00</div>
+
+    
+                <div id="end_time" style="min-width: 110px; text-align: center;">2014-12-31T00:00:00</div>
+    
+
+        </div>
+    
+    
+        <div class="right_title">Geographic Extent</div>
+
+    
+        <div>
+            <img style="margin-left: 5px; border: 2px solid black;" src="Dataset%20Record_files/staticmap.png">
+            <br>
+
+                <table class="geog_extent_table" style="margin-top: 10px; table-layout: auto; width: 310px;">
+                    <tbody><tr>
+                        <td style="background-color: white;"></td><td style="background-color: white;">&nbsp;</td><td class="geog_extent_row">90.0°</td><td style="background-color: white;">&nbsp;</td><td style="background-color: white;"></td>
+                    </tr>
+                    <tr>
+                        <td class="geog_extent_row">-180.0°</td><td style="background-color: white;">&nbsp;</td><td style="background-color: white;"></td><td style="background-color: white;">&nbsp;</td><td class="geog_extent_row">180.0°</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: white;"></td><td style="background-color: white;">&nbsp;</td><td class="geog_extent_row">-60.0°</td><td style="background-color: white;">&nbsp;</td><td style="background-color: white;"></td>
+                    </tr>
+                </tbody></table> 
+        </div>
+    
+    
+
+    
+    <div id="Author_container" class="margin-top: 10px;">
+
+        <div class="right_title">Authors (3)</div>
+        
+        
+            <div class="row1 hover_link">
+                <a href="http://catalogue.ceda.ac.uk/record/party/738/" title=" University of East Anglia Climatic Research Unit (CRU)"> University of East Anglia Climatic Research Unit (CRU)&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+            </div>
+        
+            <div class="row2 hover_link">
+                <a href="http://catalogue.ceda.ac.uk/record/party/888/" title="Ian (Harry) Harris">Ian (Harry) Harris&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+            </div>
+        
+            <div class="row1 hover_link">
+                <a href="http://catalogue.ceda.ac.uk/record/party/953/" title="Philip D. Jones">Philip D. Jones&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+            </div>
+        
+                       
+    </div>
+        
+    
+    <div id="Publisher_container" class="margin-top: 10px;">
+
+        <div class="right_title">Publishers (1)</div>
+        
+        
+            <div class="row2 hover_link">
+                <a href="http://catalogue.ceda.ac.uk/record/party/1483/" title=" Centre for Environmental Data Analysis (CEDA)"> Centre for Environmental Data Analysis (CEDA)&nbsp;&nbsp;<img src="Dataset%20Record_files/link_arrow.png"></a>
+            </div>
+        
+                       
+    </div>
+        
+    
+    
+
+
+                </div>
+
+            
+
+        </div>
+        <div class="corner-content-1col-bottom"></div>
+
+    </div>
+
+
+      
+   
+    </div>
+
+        <!-- D. FOOTER -->      
+        <div class="footer">
+          <a href="http://www.ncas.ac.uk/"><img src="Dataset%20Record_files/ncas_logo_fullcolour.jpg" alt="NCAS logo" title="NCAS" align="left"></a>
+          <a href="http://www.nceo.ac.uk/"><img src="Dataset%20Record_files/nceo_logo.jpg" alt="NCEO logo" title="NCEO" align="right"></a>
+
+          
+
+<ul class="clearfix">
+<li id="footer-menu-accessibility"><a href="http://www.ceda.ac.uk/accessibility/">Accessibility</a></li>
+</ul>
+
+<ul class="clearfix"><li id="footer-menu-disclaimer"><a href="http://www.ceda.ac.uk/disclaimer/">Disclaimer</a></li></ul>
+
+<ul class="clearfix"><li id="footer-menu-privacy-and-cookies"><a href="http://www.ceda.ac.uk/privacy-and-cookies/">Privacy and Cookies</a></li>
+</ul>
+
+
+
+          <p>Copyright © 2011 STFC&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved</p>
+          
+          <p class="credits">Original design by <a href="http://1234.info/" title="Designer Homepage">1234.info</a></p>
+        </div>
+        <div class="corner-page-bottom"></div> 
+    </div> 
+  
+    <!-- end of mf54 stuff -->
+
+
+
+
+
+<div id="CookielawBanner">
+    <div class="container">
+        <h6>This website and others run by <a href="http://www.ceda.ac.uk/">CEDA</a> uses cookies. By continuing to use this website you are agreeing to our use of cookies.</h6>
+        <p>
+            <a class="btn btn-primary pull-right" href="javascript:Cookielaw.createCookielawCookie();">OK</a> | 
+            <a href="http://www.ceda.ac.uk/privacy-and-cookies">Find out more</a>
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+</body></html>
