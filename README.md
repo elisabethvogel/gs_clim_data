@@ -69,7 +69,7 @@ prepare_mirca2000_crop_calendar(crop = tolower(crop), irrigation = irrigation, v
 ```
 
 
-##### Step 2: Prepare climate datasets
+#### Step 2: Prepare climate datasets
 
 The climate data are re-arranged and re-gridded to be used with the crop calendars. The bash script requires NCO and CDO for the processing of netcdf files. Further information on how to install NCO and CDO can be found under:
 
@@ -81,7 +81,7 @@ bash code/02_prepare-climate-input-data.sh
 ```
 
 
-##### Step 3: Calculate growing season climate data
+#### Step 3: Calculate growing season climate data
 
 
 ```{r}
