@@ -1,0 +1,105 @@
+# gs_clim_data
+Calculate climate indices for the months of a crop-specific growing season.
+
+
+### Summary
+
+This collection of scripts and functions was developed to calculate climate conditions during the growing season (between planting and harvest) for four staple crops -- maize, rice, wheat and soy. This notebook provides an example of the calculation based on one crop, one sample crop calendar and a subset of the climate data.
+The output of this .Rmd file can be found in the 'growing_season_climate_data_steps.html' output file.
+
+### Data used
+
+#### Crop calendars
+
+The following crop calendars were used in this analysis:
+
+  1) The Sacks et al. crop calendar
+  2) The MIRCA2000 crop calendar
+  3) The AgMIP v1.0 crop calendar
+
+##### References:
+
+1) Sacks et al.
+
+- URL: https://nelson.wisc.edu/sage/data-and-models/crop-calendar-dataset/index.php
+- Paper: Sacks, W.J., D. Deryng, J.A. Foley, and N. Ramankutty (2010). Crop planting dates: an analysis of global patterns. Global Ecology and Biogeography 19, 607-620. DOI: 10.1111/j.1466-8238.2010.00551.x.
+
+2) MIRCA2000
+
+- URL: https://www.uni-frankfurt.de/45218031/data_download
+- Paper: Portmann, F. T., Siebert, S. & Döll, P. (2010): MIRCA2000 – Global monthly irrigated and rainfed crop areas around the year 2000: A new high-resolution data set for agricultural and hydrological modeling, Global Biogeochemical Cycles, 24, GB 1011, doi:10.1029/2008GB003435.
+
+3) AgMIP harmonised crop calendar v1.0
+
+- Paper: Elliott, J., C. Müller, D. Deryng, J. Chryssanthacopoulos, K.J. Boote, M. Büchner, I. Foster, M. Glotter, J. Heinke, T. Iizumi, R.C. Izaurralde, N.D. Mueller, D.K. Ray, C. Rosenzweig, A.C. Ruane, and J. Sheffield, 2015: The Global Gridded Crop Model Intercomparison: Data and modeling protocols for Phase 1 (v1.0). Geosci. Model Dev., 8, 261-277, doi:10.5194/gmd-8-261-2015.
+
+
+#### Climate data
+
+The following climate datasets are processed:
+
+  1) CRU TS 3.23 dataset
+  2) HADEX2 dataset 
+
+##### References:
+
+1) CRU TS 3.23
+
+- URL: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_3.23/
+- Paper: Harris, I., Jones, P.D., Osborn, T.J. and Lister, D.H. (2014), Updated high-resolution grids of monthly climatic observations – the CRU TS3.10 Dataset. Int. J. Climatol., 34: 623–642. doi: 10.1002/joc.3711
+
+2) HADEX2
+
+- URL: https://www.climdex.org/datasets.html
+- Paper: Donat, M. G., L. V. Alexander, H. Yang, I. Durre, R. Vose, R. J. H. Dunn, K. M. Willett, E. Aguilar, M. Brunet, J. Caesar, B. Hewitson, C. Jack, A. M. G. Klein Tank, A. C. Kruger, J. Marengo, T. C. Peterson, M. Renom, C. Oria Rojas, M. Rusticucci, J. Salinger, A. S. Elrayah, S. S. Sekele, A. K. Srivastava, B. Trewin, C. Villarroel, L. A. Vincent, P. Zhai, X. Zhang and S. Kitching. 2013a. Updated analyses of temperature and precipitation extreme indices since the beginning of the twentieth century: The HadEX2 dataset, J. Geophys. Res. Atmos., 118, 2098–2118, http://dx.doi.org/10.1002/jgrd.50150.
+
+### Calculation
+
+#### Step 1: Prepare growing season calendars
+
+```{r}
+# Source function to prepare the crop calendars
+source("code/01_prepare-growing-season-calendars_functions.R")
+# Download crop calendars into: data/raw_data/crop_calendars
+# For example, MIRCA 2000: https://www.uni-frankfurt.de/45218031/data_download
+crop = "maize"
+irrigation = "combined" # use the irrigation pattern with the largest area fraction per grid cell
+# As example, prepare MIRCA et al. crop calendar
+prepare_mirca2000_crop_calendar(crop = tolower(crop), irrigation = irrigation, verbose = TRUE)
+```
+
+
+##### Step 2: Prepare climate datasets
+
+The climate data are re-arranged and re-gridded to be used with the crop calendars. The bash script requires NCO and CDO for the processing of netcdf files. Further information on how to install NCO and CDO can be found under:
+
+- NCO: http://nco.sourceforge.net/
+- CDO: https://code.mpimet.mpg.de/projects/cdo
+
+```{bash}
+bash code/02_prepare-climate-input-data.sh
+```
+
+
+##### Step 3: Calculate growing season climate data
+
+
+```{r}
+# Source functions to calculate the growing season climate statistics
+source("code/03_calculate-growing-season-climate_functions.R")
+###############################################################################
+# Example: Prepare growing season data for temperature in the CRU TS 3.23 dataset
+crop_calendar_path = "data/processed_data/crop_calendars/mirca2000_crop_calendar"
+cru_ts_path = "data/processed_data/climate_data/cru_ts_323"
+out_path = "data/processed_data/growing_season_climate/cru_ts_323"
+dir.create(out_path, showWarnings = FALSE, recursive = TRUE)
+crop = "maize"
+var = "tmp"
+unit = "degrees Celsius"
+longname = "temperature"
+irrigation = "combined"
+crop_calendar_nc = file.path(crop_calendar_path, sprintf("mirca_crop_calendar_%s_%s.nc", crop, irrigation))
+climate_nc = file.path(cru_ts_path, sprintf("cru_ts323_%s_1961_2014.nc", var))
+output_nc = file.path(out_path, sprintf("%s_%s_cru_ts_323_%s_gs.nc", crop, irrigation, var))
+gs = calculate_growing_season_climate(crop_calendar_nc, climate_nc, output_nc, var, unit, longname,
+                                 time_agg = "month", verbose = TRUE)
